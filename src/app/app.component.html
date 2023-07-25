@@ -1,13 +1,17 @@
 <div class="row">
-  <div class="col-8">
+  <div class="col-12">
     <ng-container *ngFor="let obj of list">
-      <button type="button" style="margin-right: 5px;">{{obj}}</button>
+      <button type="button" class="btn btn-primary">{{obj}}</button>
     </ng-container>
-    <canvas #canvas></canvas>
   </div>
-  <div class="col-4">
-    <div *ngFor="let user of users">
-      <button type="button" style="margin-right: 5px;">{{user.name}}</button>
+  <div class="row mt-2">
+    <div class="col-8">
+      <canvas #canvas></canvas>
+    </div>
+    <div class="col-4">
+      <div *ngFor="let user of users">
+        <button type="button" class="btn btn-primary mr-2">{{user.name}}</button>
+      </div>
     </div>
   </div>
 </div>
